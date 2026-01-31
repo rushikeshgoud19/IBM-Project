@@ -1,64 +1,63 @@
-# 🏛️ Project Sovereign: The Autonomous Supply Chain Boardroom
+# 🏛️ Project Sovereign: The Enterprise AI Boardroom
+### *Autonomous Supply Chain Orchestration Platform*
 
-### 🏆 Built for the IBM watsonx Challenge
-**Powered by IBM Granite-4-h-small**
+🏆 **Built for the IBM watsonx Challenge**
+**Powered by IBM Granite-4-h-small & Watsonx.ai**
 
 ---
 
 ## 📖 The Problem
-Modern supply chains are fragile. Decisions about logistics, budget, and code integration often take days because they require coordination between different human departments (Finance, Operations, Engineering). This latency causes delays and financial loss.
+Modern supply chains are paralyzed by human latency. Approving a vendor change or writing an automation script requires coordination between **Finance**, **Engineering**, and **Operations**. This process usually takes days.
 
 ## 💡 The Solution
-**Project Sovereign** is an autonomous "AI Boardroom" that replaces slow manual coordination with intelligent multi-agent debate. 
+**Project Sovereign** is an autonomous "AI Executive Platform" that replaces slow meetings with **Agentic Workflows**. 
 
-Instead of a single chatbot, Sovereign instantiates **three distinct AI Agents** using the **IBM Granite-4-h-small** model. They analyze every proposal in real-time:
-
-1.  **👨‍💻 Chief Architect:** Analyzes code stability, security, and technical debt.
-2.  **💰 CFO (Finance):** Analyzes budget impact, ROI, and financial risk.
-3.  **🚚 COO (Operations):** Analyzes logistics speed, supply chain efficiency, and timelines.
-
-Finally, a **👑 CEO Agent** listens to their debate and issues a final, binding **"Executive Decree"** (APPROVED or REJECTED).
+It does not just "chat." It **Reads** documents, **Debates** risk, **Decides** on strategy, and **Builds** the actual code implementation automatically.
 
 ---
 
-## ⚙️ How It Works (The Architecture)
+## 🌟 Key Features (The "Sovereign" Engine)
 
-The system is built on **IBM watsonx.ai** using the `ibm-watson-machine-learning` SDK.
+### 1. 📂 Intelligent Document Analysis (RAG)
+* **Input:** Upload real Vendor Proposals (PDFs) or type raw text.
+* **Action:** The system reads the file, extracting hidden costs, timelines, and technical risks that humans might miss.
 
-1.  **Input:** A user submits a supply chain proposal (e.g., "Automate logistics using AI").
-2.  **Multi-Agent Debate:** The Python engine cycles through the agent personas, sending the prompt to the **Granite-4-h-small** deployment with specific "System Instructions" for each role.
-3.  **Synthesis:** The Agents' responses are collected into a "Meeting Minute" log.
-4.  **Decision:** The "CEO" model reads the minutes and makes a logic-based decision based on the consensus or conflict found in the debate.
+### 2. ⚔️ The Multi-Agent Boardroom
+Three distinct AI Agents (running on **IBM Granite**) debate the proposal in real-time:
+* **👨‍💻 Chief Architect:** Audits technical debt and security risks.
+* **💰 CFO (Finance):** Enforces budget constraints and calculates ROI.
+* **🚚 COO (Operations):** Prioritizes speed and logistics efficiency.
 
----
+### 3. 🛠️ The Forge (Autonomous Code Gen)
+* If a proposal is **APPROVED**, the system activates the **Engineer Agent**.
+* It automatically writes **production-ready Python scripts** to implement the solution immediately.
 
-## 📸 Proof of Concept
-
-### Scenario A: Risky Proposal (Rejected)
-*Proposal: "Replace all humans with AI immediately."*
-* **Architect:** Warns about security risks.
-* **CFO:** Warns about high initial cost.
-* **CEO Decision:** **REJECTED** due to excessive risk.
-
-### Scenario B: Safe Proposal (Approved)
-*Proposal: "Use AI to assist humans with data entry."*
-* **Architect:** Approves (low technical risk).
-* **COO:** Approves (high efficiency gain).
-* **CEO Decision:** **APPROVED** for immediate implementation.
+### 4. 📊 The Watchtower (Analytics)
+* Real-time dashboard visualizing **Risk Scores**, **Budget Impact**, and **Compliance Confidence**.
 
 ---
 
-## 🛠️ Technology Stack
-* **Model:** IBM Granite-4-h-small (v2026-01-30)
-* **Platform:** IBM Cloud (watsonx.ai)
-* **Language:** Python 3.10
-* **Authentication:** IBM Cloud IAM (Identity and Access Management)
+## ⚙️ Technology Stack
+* **AI Model:** IBM Granite-4-h-small
+* **Orchestration:** IBM watsonx.ai
+* **Frontend:** Streamlit (Enterprise Dark Mode)
+* **Analytics:** Altair Charts
+* **Document Processing:** PyPDF (RAG Engine)
+
+---
 
 ## 🚀 How to Run
-1. Clone the repository.
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set your IBM Cloud API Key in `boardroom.py`.
-4. Run the simulation: `python boardroom.py`
+1.  Clone the repository.
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Set your IBM Cloud API Key in `app.py`.
+4.  Launch the Dashboard:
+    ```bash
+    streamlit run app.py
+    ```
 
 ---
+
 *Created by Rushikesh Goud for the IBM watsonx Hackathon 2026.*
