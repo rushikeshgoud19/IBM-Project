@@ -1,4 +1,5 @@
 # 🏛️ Project Sovereign: The Enterprise AI Boardroom
+We turned weeks of meetings into minutes of autonomous execution. This is Project Sovereign. Thank you.
 ### *Autonomous Supply Chain Orchestration Platform*
 
 🏆 **Built for the IBM watsonx Challenge**
@@ -61,3 +62,4 @@ Three distinct AI Agents (running on **IBM Granite**) debate the proposal in rea
 ---
 
 *Created by Rushikesh Goud for the IBM watsonx Hackathon 2026.*
+
